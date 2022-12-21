@@ -17,6 +17,34 @@ public class App {
         System.out.println("Contrincante: " + Ret);
         System.out.println("Tu: " + Res);
 
+        // * Deciciones
+        // Piedra
+        if (Res.equals("Piedra")) {
+            if (Ret.equals("Piedra")) {
+                System.out.println("Empate");
+            } else if (Ret.equals("Papel")) {
+                System.out.println("Perdiste!");
+            } else {
+                System.out.println("Ganaste!");
+            }
+        } else if (Res.equals("Papel")) {
+            if (Ret.equals("Piedra")) {
+                System.out.println("Ganaste!");
+            } else if (Ret.equals("Papel")) {
+                System.out.println("Empate");
+            } else {
+                System.out.println("Perdiste!");
+            }
+        } else {
+            if (Ret.equals("Piedra")) {
+                System.out.println("Perdiste");
+            } else if (Ret.equals("Papel")) {
+                System.out.println("Ganaste!");
+            } else {
+                System.out.println("Empate");
+            }
+        }
+
     }
 
     public static int Aleatorio(int Mínimo, int Máximo) {

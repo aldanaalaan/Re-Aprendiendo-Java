@@ -29,7 +29,13 @@ public class Propuesta extends JFrame implements ActionListener {
         bn = new JButton("No");
         bn.setBounds(500, 90, 100, 30);
         add(bn);
-        bn.addActionListener(this);
+        // Evento al responder que no
+        bn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent e) {
+                Random r = new Random();
+                bn.setBounds(r.nextInt(600), r.nextInt(100) + 50, 100, 30);
+            }
+        });
 
     }
 
@@ -37,10 +43,6 @@ public class Propuesta extends JFrame implements ActionListener {
         if (e.getSource() == bs) {
             JOptionPane.showMessageDialog(null, "Lo sabia, te quiero mucho <3");
             System.exit(0);
-        }
-        if (e.getSource() == bn) {
-            Random r = new Random();
-            bn.setBounds(r.nextInt(600), r.nextInt(100) + 50, 100, 30);
         }
 
     }

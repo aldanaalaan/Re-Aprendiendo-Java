@@ -65,7 +65,7 @@ public class App {
         } else if (Eleccion == 3) {
             return "Tijeras";
         } else {
-            return "Invalido"
+            return "Invalido";
         }
     }
 }

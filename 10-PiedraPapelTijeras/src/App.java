@@ -24,7 +24,7 @@ public class App {
                 System.out.println("Empate");
             } else if (Ret.equals("Papel")) {
                 System.out.println("Perdiste!");
-            } else {
+            } else if (Ret.equals("Tijeras")) {
                 System.out.println("Ganaste!");
             }
         } else if (Res.equals("Papel")) {
@@ -32,7 +32,7 @@ public class App {
                 System.out.println("Ganaste!");
             } else if (Ret.equals("Papel")) {
                 System.out.println("Empate");
-            } else {
+            } else if (Ret.equals("Tijeras")) {
                 System.out.println("Perdiste!");
             }
         } else if (Res.equals("Tijeras")) {
@@ -43,7 +43,7 @@ public class App {
             } else {
                 System.out.println("Empate");
             }
-        } else {
+        } else if (Ret.equals("Tijeras")) {
             System.out.println("No valido");
         }
 

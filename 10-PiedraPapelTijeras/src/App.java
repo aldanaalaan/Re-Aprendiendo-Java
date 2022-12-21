@@ -35,7 +35,7 @@ public class App {
             } else {
                 System.out.println("Perdiste!");
             }
-        } else {
+        } else if (Res.equals("Tijeras")) {
             if (Ret.equals("Piedra")) {
                 System.out.println("Perdiste");
             } else if (Ret.equals("Papel")) {
@@ -43,6 +43,8 @@ public class App {
             } else {
                 System.out.println("Empate");
             }
+        } else {
+            System.out.println("No valido");
         }
 
     }
@@ -60,8 +62,10 @@ public class App {
             return "Piedra";
         } else if (Eleccion == 2) {
             return "Papel";
-        } else {
+        } else if (Eleccion == 3) {
             return "Tijeras";
+        } else {
+            return "Invalido"
         }
     }
 }
